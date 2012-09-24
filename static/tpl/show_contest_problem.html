@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="/static/css/show_problem.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+
+<div id="content">
+<div id="left">
+<div class="container">
+<div class="post">
+
+    <div class="postcontent">
+      	<h2>{{ prob.title }}</h2>
+      	<div class="limit">
+      		<span>Time limit: {{ prob.time_limit }}ms</span><br/>
+      		<span>Memory Limit: {{ prob.memory_limit }}kb</span>
+      	</div>
+ 	<div class="problem_description">
+    	{{ prob.description|safe }}
+    </div>
+    
+    <div class="input_format">
+    <h3>Input</h3>
+  	{{ prob.input_format|safe }}
+    </div>
+    <div class="output_format">
+    <h3>Output</h3>
+    {{ prob.output_format|safe }}
+    </div>
+    <div class="note">
+    <h3>Note</h3>
+    {{ prob.note|safe }}
+    </div>
+    
+    </div>
+  	<div class="clear"></div>
+
+	<div class="sample">
+    {% for sam in samples %}
+    <table>
+    <tr>
+    	<th>Sample Input #{{ sam.num }}</th>
+        <th>Sample Output #{{ sam.num }}</th>
+    </tr>
+    <tr>
+    	<td><pre>{{ sam.input }}</pre></td>
+        <td><pre>{{ sam.output }}</pre></td>
+    </tr>
+    </table> <br/>
+    {% endfor %}
+    </div>
+</div>
+</div>
+</div>
+<div id="sidebar">
+<div class="container">
+
+<h2 id="submit"><a href="/contest_submit/{{ con.id }}/{{ prob.id }}">Submit?</a></h2>
+
+<h2>Problem Info</h2>
+<div class="latestposts">
+<ul class="shadow">
+<li>source: {{ prob.source }}</li>
+<li>total submissions: {{ prob.submission_set.count }}</li>
+<li>user solved: {{ prob.profile_set.count }}</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+{% endblock %}

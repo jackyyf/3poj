@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="/static/css/show_contest.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+
+<div id="content">
+<div id="left">
+<div class="container">
+<div class="post">
+
+    <div class="postcontent">
+      <h2>{{ con.name }}</h2>
+      <p align="center"><strong><font color="#0000E3">Start Time :</font> {{ con.start_time }} <font color="#0000E3">End Time :</font> {{ con.end_time }} <font color="#0000E3">Contest Status :</font> {% ifequal cont.status "Pending" %}
+				<font color="#28FF28">Pending</font>
+				{% else %}
+					{% ifequal con.status "Running" %}
+					<font color="#FF0000">Running</font>
+					{% else %}
+					<font color="#9D9D9D">Ended</font>
+					{% endifequal %}
+				{% endifequal %}
+ </strong><strong><a href="/contest_ranklist/{{ con.id }}">Ranklist</a></strong>
+ <strong><a href="/contest_status/{{ con.id }}">Statuslist</a></strong>
+      <div class="problemlist">
+    	<table>
+        	<tr>
+            	<th width="113"><div align="center">ID</div></th>
+                <th width="565"> Title</th>
+                <th width="246">Average</th>
+        	</tr>
+        	{% for x in info %}
+            <tr class="alt{{ x.odd }}">
+            	<td class="probid">{{ x.id }}</td>
+                <td><a href="/show_contest_problem/{{ con.id }}/{{ x.id }}">{{ x.title }}</a></td>
+                <td class="average">{{ x.average }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    </div>
+  <div class="clear"></div>
+
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+{% endblock %}

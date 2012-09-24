@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="/static/css/ranklist.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+<div id="content">
+<div id="left">
+<div class="container">
+<div class="post">
+
+    <div class="postcontent">
+      <h2><a href="/show_contest/{{ con_id }}">Contest #{{ con_id }}</a> Ranklist</h2>
+ 	<div class="ranklist">
+    	<table>
+        	<tr>
+            	<th>Rank</th>
+            	<th>User</th>
+                <th>Score</th>
+        	</tr>
+        	{% for x in ranklist %}
+            <tr>
+            	<td class="rank">{{ x.rank }}</td>
+				<td class="userid"><a href="/userdata/{{ x.userid }}">{{ x.name }}</a></td>
+                <td class="usersolved">{{ x.score }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    </div>
+  <div class="clear"></div>
+
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+{% endblock %}

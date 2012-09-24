@@ -1,0 +1,145 @@
+.clear {clear:both;}
+#content {background:#efefef;}
+#left {
+	width: 650px;
+	float: left;
+	background: #fff;
+}
+#sidebar {width:300px; float:right; background:#efefef;}
+#left .container, #sidebar .container {padding:10px;}
+
+#content p {
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+	text-indent: 2pc;
+}
+.post {padding-bottom:15px; margin-bottom:15px; border-bottom:solid 3px #ccc;}
+.post h2 {
+	display: block;
+	color: #306;
+	text-align: center;
+	font-family: 'American Typewriter', Georgia, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.postcontent {
+}
+.postheader {width:100px; float:left;}
+.postheader .postinfo {font-size:0.80em!important; width:90px; padding:5px; display:block;}
+.postheader .postinfo span {display:block;}
+
+.post a:hover {color:#000; background:#ffc;}
+.postheader .date { width:80px; float:left; background:#ffffcc; padding:3px; margin-bottom:18px;}
+.postheader .date .year {display:block; background:#306; padding:3px; font-size:0.8em; font-weight:bold; color:#fff; text-align:center;}
+.postheader .date .day {display:block; text-align:center; padding:3px; font: bold 3.00em 'American Typewriter', Georgia, sans-serif;}
+.postheader .date .month {display:block; font-size:0.75em; background:#000; color:#fff; text-align:center; padding:3px;}
+
+.shadow {
+-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+-moz-box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+box-shadow: 1px 1px 5px rgba(0,0,0,.3); 
+}
+.readmore a {display:inline-block; background:#936; color:#fff; font:bold 0.8em "Trebuchet MS", Arial, Helvetica, sans-serif; padding:2px; border:none;}
+.readmore a:visited, .readmore a:active {display:inline-block; background:#936; color:#fff; font:bold 0.8em "Trebuchet MS", Arial, Helvetica, sans-serif; padding:2px; border:none;}
+#sidebar h2 {display:block; font: bold 1.8em 'American Typewriter', Georgia, sans-serif; color:#306; margin-bottom:15px;}
+#sidebar .categories li {display:block; height:29px; border-bottom:solid 1px #ddd;}
+#sidebar .categories li a {display:block; height:22px; padding:6px 10px 0 10px; color:#333;}
+#sidebar .categories li a:visited, #sidebar .categories li a:active {display:block; height:22px; padding:6px 10px 0 10px; color:#333;}
+#sidebar li a:hover {background:#fff; color:#000;}
+#sidebar ul { margin:5px 10px 20px 0; background:#f4f4f4; }
+#sidebar .latestposts li {display:block;border-bottom:solid 1px #ddd;}
+#sidebar .latestposts li a {display:block; padding:6px 10px 6px 10px; color:#333;}
+#sidebar .latestposts li a:visited, #sidebar .categories li a:active {display:block; height:22px; padding:6px 10px 0 10px; color:#333;}
+.pagination {background:#f4f4f4; margin:10px;}
+.pagination span a {display:block; font:bold 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif; color:#000; padding:5px;}
+.leftalign {float:left;}
+.rightalign {float:right;}
+
+#submit {
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	text-align: center;
+	color: #FFF;
+}
+#wrap #content #sidebar .container #submit a:visited {
+	background-color: #FFF;
+}
+.sample table {
+	width: 550px;
+	margin-left: 40px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-collapse: collapse;
+}
+.sample table tr th {
+	font-weight: bold;
+	text-align: center;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.sample table tr td {
+	font-family: "Courier New", Courier, monospace;
+	vertical-align: top;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	background-color: #F4F4F4;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+.problem_description {
+	margin-left:55px;
+	margin-right:55px;
+	margin-bottom:12px;
+}
+
+.limit {
+	font-size: 16px;
+	font-family: serif;
+	text-align:center;
+}
+
+.input_format h3, .output_format h3, .note h3 {
+	display: block;
+	color: #306;
+	text-align: left;
+	font-family: 'American Typewriter', Georgia, sans-serif;
+	font-size: large;
+	font-weight: bold;
+	margin-left: -20px;
+}
+.input_format, .output_format, .note {
+	margin-left: 55px;
+	margin-top: 15px;
+	margin-right: 55px;
+	margin-bottom: 15px;
+
+}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="/static/css/update_profile.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+<div id="content">
+<div id="left">
+<div class="container">
+<div class="post">
+
+    <div class="postcontent">
+      	<h2>Update user's profile</h2>
+      	{% if errors %}
+      	<p>Something went wrong...</p>
+      	{% endif %}
+ 		<form class="updateprofileform" id="form1" method="post" action=""> {% csrf_token %}
+        	
+        	<label for="old_password">Old password</label>
+ 		  	<input id="old_password" name="old_password" type="password" value="" /> 	
+            <br/> <br/>
+            <label for="new_password">New password</label>
+ 		  	<input id="new_password" name="new_password" type="password" value="" /> 	
+            <br/> <br/>
+			<label for="cnew_password">New passwd Again</label>
+			<input id="cnew_password" name="cnew_password" type="password" value="" />
+			<br/> <br/>
+            <label for="email">Email</label>
+ 		   <input id="email" name="email" type="text" value="{{ email }}" /> 	
+            <br/> <br/>
+            <label for="nickname">Nickname</label>
+ 		   <input id="nickname" name="nickname" type="text" value="{{ nickname }}" /> 	
+            <br/> <br/>
+           <label for="school">School</label>
+ 		   <input id="school" name="school" type="text" value="{{ school }}" /> 	
+            <br/> <br/>
+            <label for="motto">Motto</label> <br />
+ 		   <textarea id="motto" name="motto" value="" >{{ motto }}</textarea>
+            <br/><br/>
+
+            <input id="submitbutton" name="submit" type="submit" value="Submit"/>
+            
+ 		  </form>
+    </div>
+  <div class="clear"></div>
+
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+{% endblock %}

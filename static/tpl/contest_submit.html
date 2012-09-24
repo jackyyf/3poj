@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="/static/css/submit.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+<div id="content">
+<div id="left">
+<div class="container">
+<div class="post">
+
+    <div class="postcontent">
+      	<h2>Submit</h2>
+ 		<form class="submitform" id="form1" method="post" action="">{% csrf_token %}
+        	<label for="problem_id">Problem ID</label>
+ 		  	<input id="problem_id" name="problem_id" type="text" value="{{ prob_id }}" /> 	
+            <br/> <br/>
+ 		    <label for="language">Language</label>
+ 		    <select name="language" id="language">
+ 		    	<option value="C++">C++</option>
+ 		    	<option value="Pascal">Pascal</option>
+ 		    	<option value="C">C</option>
+ 		    </select>
+ 		    <br/> <br/>
+ 		    <label for="source_code">Source Code</label> <br />
+ 		    <textarea name="source_code" id="source_code" cols="45" rows="5"></textarea>
+            <br/><br/>
+            <input type="submit" value="Submit" />
+            
+ 		  </form>
+    </div>
+  <div class="clear"></div>
+
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% block head %}
+<link href="/static/css/login.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<div id="content">
+<div id="left">
+<div class="container">
+<div class="post">
+
+    <div class="postcontent">
+      	<h2>Log in</h2>
+      	{% if errors %}
+      		<p>please input the correct combination of username and password</p>
+      	{% endif %}
+ 		<form class="loginform" id="form1" method="post" action=""> {% csrf_token %}
+        	<label for="username">Username</label>
+ 		  	<input id="username" name="username" type="text" value="" /> 	
+            <br/> <br/>
+        	<label for="password">Password</label>
+ 		  	<input id="password" name="password" type="password" value="" /> 	
+            <br/> <br/>
+ 		   
+            <input id="submitbutton" name="submit" type="submit" value="Log in"/>
+            
+ 		  </form>
+    </div>
+  <div class="clear"></div>
+
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+{% endblock %}

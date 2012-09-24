@@ -1,0 +1,33 @@
+* {padding:0; margin:0;}
+html { display:block; height:100%; width:100%; background:url(images/htmlbg.jpg) repeat;
+}
+body { background:url(images/bodybg.jpg) repeat-x; font-family:Verdana, Geneva, sans-serif; font-size:0.88em;}
+#wrap {background:url(images/wrapbg.jpg) no-repeat; width:960px; margin:auto; min-height:450px; margin-bottom:100px;}
+#topbar {height:24px;font:#fff}
+#ribbon {height:102px;}
+h1#sitename {font: bold 2.00em 'American Typewriter', Georgia, sans-serif; color:#fff; text-shadow:#000 1px 1px 1px; display:block; padding:30px 0 0 0;}
+#header {height:50px; background:#222326;}
+#topnav {background:#111; height:50px; background:url(images/menubar.jpg) repeat-x; font-family:Tahoma, Geneva, sans-serif; font-weight:bold;}
+.clear {clear:both;}
+#content {background:#efefef;}
+#header ul {list-style:none; display:block;}
+#topnav li { display:inline; text-shadow:#000 1px 1px 1px;}
+#topnav li a {display:block; color:#ccc; text-decoration:none; height:35px; float:left; padding:15px 15px 0 15px;}
+#topnav li a:visited, #topnav li a:active {color:#ccc; text-decoration:none;}
+#topnav li a:hover {color:#fff; background:#000;}
+#topnav li.current a {color:#fff; background:#000;}
+#topbar {
+	height: 18px;
+	color: #FFF;
+	font-weight: normal;
+	text-align: right;
+}
+#topbar a {color:#fff}
+#topbar a:visited {color:CornflowerBlue}
+
+#footer { padding:15px; text-align:center; color:#ccc;}
+#footer a {color:#fff; text-decoration:none;}
+#footer a:visited, #footer a:active {color:#fff;}
+#footer a:hover {color:#fff; text-decoration:underline;}
+#credits {font-size:0.82em;}
+#footer p {margin-bottom:10px;}

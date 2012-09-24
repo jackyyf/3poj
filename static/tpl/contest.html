@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="/static/css/contest.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+
+<div id="content">
+<div id="left">
+<div class="container">
+<div class="post">
+
+    <div class="postcontent">
+      <h2>Contests</h2>
+ 	  <div class="contestlist">
+    	<table>
+        	<tr>
+            	<th width="123">ID</th>
+                <th width="313">Contest Name </th>
+                <th width="168">Start Time </th>
+                <th width="159">Duration</th>
+                <th width="153"> Status</th>
+        	</tr>
+        	{% for x in info %}
+            <tr class="alt{{ x.odd }}">
+            	<td class="contestid">{{ x.id }}</td>
+                <td><a href="/show_contest/{{ x.id }}">{{ x.name }}</a></td>
+                <td class="something">{{ x.start_time }}</td>
+                <td class="something">{{ x.duration }}</td>
+                <td class="something">
+				{% ifequal x.status "Pending" %}
+				<font color="#28FF28">Pending</font>
+				{% else %}
+					{% ifequal x.status "Running" %}
+					<font color="#FF0000">Running</font>
+					{% else %}
+					<font color="#9D9D9D">Ended</font>
+					{% endifequal %}
+				{% endifequal %}
+				</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    </div>
+  <div class="clear"></div>
+
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+{% endblock %}

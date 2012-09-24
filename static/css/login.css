@@ -1,0 +1,40 @@
+.clear {clear:both;}
+#content {background:#efefef;}
+#left {
+	width: 100%;
+	float: left;
+	background: #fff;
+}
+#sidebar {width:300px; float:right; background:#efefef;}
+#left .container, #sidebar .container {padding:10px;}
+#sidebar ul {list-style:none; display:block;}
+#content p {
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+	text-indent: 2pc;
+}
+.post {padding-bottom:15px; margin-bottom:15px; border-bottom:solid 3px #ccc;}
+.post h2 {
+	display: block;
+	color: #306;
+	text-align: center;
+	font-family: 'American Typewriter', Georgia, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.postcontent {
+}
+.loginform {
+	font-size: large;
+	font-style: normal;
+	text-align: center;
+}
+
+#submitbutton {
+	width: 100px;
+	font-size: medium;
+}

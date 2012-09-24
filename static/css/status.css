@@ -1,0 +1,81 @@
+.clear {clear:both;}
+#content {background:#efefef;}
+#left {
+	width: 100%;
+	float: left;
+	background: #fff;
+}
+#sidebar {width:300px; float:right; background:#efefef;}
+#left .container, #sidebar .container {padding:10px;}
+#sidebar ul {list-style:none; display:block;}
+#content p {
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+	text-indent: 2pc;
+}
+.post {padding-bottom:15px; margin-bottom:15px; border-bottom:solid 3px #ccc;}
+.post h2 {
+	display: block;
+	color: #306;
+	text-align: center;
+	font-family: 'American Typewriter', Georgia, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.postcontent {
+}
+
+.statuslist table {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width: 100%;
+	border-collapse: collapse;
+	text-align:center;
+}
+
+.statuslist table th {
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-right: 7px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	background-color: #A7C942;
+	color: #FFF;
+	border: 1.4px solid #F93;
+}
+.statuslist table td {
+	font-size: 15px;
+	border: 1.4px solid #F93;
+	padding-top: 3px;
+	padding-right: 7px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+}
+
+
+.ac {
+	color: #0C0;
+}
+.wa {
+	color: #C00;
+}
+.tle {
+	color: #F93;
+}
+.mle {
+	color: #F0F;
+}
+.re {
+	color: #03F;
+}
+.ce {
+	color: #999;
+}
+
+.pd, .rn {
+	color: #000;
+}

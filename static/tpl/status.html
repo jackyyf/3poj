@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="/static/css/status.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+<div id="content">
+<div id="left">
+<div class="container">
+<div class="post">
+
+    <div class="postcontent">
+      <h2>Statuslist</h2>
+ 	<div class="statuslist">
+    	<table>
+        	<tr>
+            	<th width="88">Run ID</th>
+                <th width="90">User</th>
+                <th width="100">Problem</th>
+                <th width="112">Status</th>
+                <th width="99">Language</th>
+                <th width="80">Length</th>
+                <th width="70">Time</th>
+                <th width="70">Memory</th>
+                <th width="191">Date</th>
+        	</tr>
+        	{% for x in info %}
+            <tr>
+            	<td>{{ x.id }}</td>
+                <td><a href="/userdata/{{ x.userid }}">{{ x.name }}</a></td>
+                <td><a href="/show_problem/{{ x.probid }}">{{ x.probid }}</a></td>
+                <td class={{ x.cls }}><b>{{ x.status }}</b></td>
+                <td>{{ x.language }}</td>
+				{% ifequal x.userid x.cur_id %}
+                <td><a href="/show_code/{{ x.id }}">{{ x.code_len }}B</a></td>
+				{% else %}
+				<td>{{ x.code_len }}B</td>
+				{% endifequal %}
+                {% ifequal x.time_cost -1 %}
+                <td>---</td>
+                {% else %}
+                <td>{{ x.time_cost }}ms</td>
+                {% endifequal %}
+                {% ifequal x.memory_cost -1 %}
+                <td>---</td>
+                {% else %}
+                <td>{{ x.memory_cost }}kb</td>
+                {% endifequal %}
+                <td>{{ x.datetime }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    </div>
+  <div class="clear"></div>
+
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 0,1' at line 1
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.users' doesn't exist
+[DEBUG]{self::} | Thread {self::} started.
+[ERROR]{self::} | Connect to MySQL Server Failed
+[DEBUG]{self::} | Thread {self::} started.
+[ERROR]{self::} | Connect to MySQL Server Failed
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_problems' doesn't exist
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[WARNING]{self::} | MySQL Query Error: Table 'pjudge.pj_users' doesn't exist
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: Unknown column 'submit' in 'field list'
+[DEBUG]{self::} | Thread {self::} started.
+[WARNING]{self::} | MySQL Query Error: Unknown column 'submit' in 'field list'
